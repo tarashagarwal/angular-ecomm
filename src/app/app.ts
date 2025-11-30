@@ -7,7 +7,6 @@ import {Header} from './components/header/header';
   standalone: true,
   imports: [RouterOutlet, Header],
   template: `
-    <h1>Welcome to {{ title() }}!</h1>
     <app-header />
 
   `,

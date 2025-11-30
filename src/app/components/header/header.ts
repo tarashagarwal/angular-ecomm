@@ -8,7 +8,7 @@ import { PrimaryButton } from '../primary-button/primary-button';
   template: `
     <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between">
       <span>My Store</span>
-      <app-primary-button/>
+      <app-primary-button [label]="cart()" (btnClicked)="showButtonClicked()"/>
     </div>
   `,
   styles: `
@@ -22,4 +22,10 @@ import { PrimaryButton } from '../primary-button/primary-button';
 
 export class Header {
   title = signal('Angular Ecommerce');
+
+  cart = signal('My Cart');
+
+  showButtonClicked() {
+    console.log('Button clicked');
+  }
 }
