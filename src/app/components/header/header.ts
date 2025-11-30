@@ -3,9 +3,10 @@ import { PrimaryButton } from '../primary-button/primary-button';
 
 @Component({
   selector: 'app-header',
+  standalone: true,
   imports: [PrimaryButton],
   template: `
-    <div class="bg-slate-100 px-4 py-3 shadow-md">
+    <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between">
       <span>My Store</span>
       <app-primary-button/>
     </div>
